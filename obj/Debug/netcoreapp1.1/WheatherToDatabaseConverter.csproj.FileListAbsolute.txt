@@ -1,0 +1,8 @@
+C:\Users\User\Documents\WheatherToDatabaseConverter\bin\Debug\netcoreapp1.1\WheatherToDatabaseConverter.deps.json
+C:\Users\User\Documents\WheatherToDatabaseConverter\bin\Debug\netcoreapp1.1\WheatherToDatabaseConverter.runtimeconfig.json
+C:\Users\User\Documents\WheatherToDatabaseConverter\bin\Debug\netcoreapp1.1\WheatherToDatabaseConverter.runtimeconfig.dev.json
+C:\Users\User\Documents\WheatherToDatabaseConverter\bin\Debug\netcoreapp1.1\WheatherToDatabaseConverter.dll
+C:\Users\User\Documents\WheatherToDatabaseConverter\bin\Debug\netcoreapp1.1\WheatherToDatabaseConverter.pdb
+C:\Users\User\Documents\WheatherToDatabaseConverter\obj\Debug\netcoreapp1.1\WheatherToDatabaseConverter.AssemblyInfo.cs
+C:\Users\User\Documents\WheatherToDatabaseConverter\obj\Debug\netcoreapp1.1\WheatherToDatabaseConverter.dll
+C:\Users\User\Documents\WheatherToDatabaseConverter\obj\Debug\netcoreapp1.1\WheatherToDatabaseConverter.pdb
