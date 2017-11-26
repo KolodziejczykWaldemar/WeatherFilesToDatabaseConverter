@@ -1,5 +1,5 @@
 # WeatherFilesToDatabaseConverter
-Specially useful for civil engineering projects and other people struggling with heat exchange cases in building in Poland. It is also efficient tool helping with solar and photovoltaic installations.
+Specially useful for civil engineering projects and other people struggling with heat exchange cases in buildings in Poland. It is also efficient tool for solar and photovoltaic installations. 
 
 
 
