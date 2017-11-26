@@ -2,7 +2,7 @@
 using System.IO;
 using System.Globalization;
 
-namespace WheatherToDatabaseConverter //zmieniłem parsowanie na kropki, nie testowane
+namespace WheatherToDatabaseConverter
 {
     class Program
     {
@@ -69,7 +69,6 @@ namespace WheatherToDatabaseConverter //zmieniłem parsowanie na kropki, nie tes
                         
                         temporaryModel.WheatherModelId = Int32.Parse(nextParts[count], NumberStyles.Any, CultureInfo.InvariantCulture);
                         temporaryModel.WheatherModelId = generalCount + line;
-                    // Console.WriteLine("inside model={0}", temporaryModel.WheatherModelId);
 
                         count++;
                         Console.WriteLine("N={0} - {1}", N, count);
@@ -81,10 +80,10 @@ namespace WheatherToDatabaseConverter //zmieniłem parsowanie na kropki, nie tes
                         }
                         M = Int32.Parse(nextParts[count], NumberStyles.Any, CultureInfo.InvariantCulture);
                         temporaryModel.Month = Int32.Parse(nextParts[count], NumberStyles.Any, CultureInfo.InvariantCulture);
-                    //   Console.WriteLine("inside model={0}", temporaryModel.Month);
 
                         count++;
-                    // Console.WriteLine("M={0} - {1}", M, count);
+
+
 
 
                         while(Int32.TryParse(nextParts[count], NumberStyles.Any, CultureInfo.InvariantCulture, out D) == false)
@@ -93,10 +92,8 @@ namespace WheatherToDatabaseConverter //zmieniłem parsowanie na kropki, nie tes
                         }
                         D = Int32.Parse(nextParts[count], NumberStyles.Any, CultureInfo.InvariantCulture);
                         temporaryModel.Day = Int32.Parse(nextParts[count], NumberStyles.Any, CultureInfo.InvariantCulture);
-                    // Console.WriteLine("inside model={0}", temporaryModel.Day);
                         
                         count++;
-                    //  Console.WriteLine("D={0} - {1}", D, count);
 
 
                         while(Int32.TryParse(nextParts[count], NumberStyles.Any, CultureInfo.InvariantCulture, out H) == false)
@@ -105,9 +102,7 @@ namespace WheatherToDatabaseConverter //zmieniłem parsowanie na kropki, nie tes
                         }
                         H = Int32.Parse(nextParts[count], NumberStyles.Any, CultureInfo.InvariantCulture);
                         temporaryModel.Hour = Int32.Parse(nextParts[count], NumberStyles.Any, CultureInfo.InvariantCulture);
-                    // Console.WriteLine("inside model={0}", temporaryModel.Hour);
                         count++;
-                    //  Console.WriteLine("H={0} - {1}", H, count);
 
 
                         while(float.TryParse(nextParts[count], NumberStyles.Any, CultureInfo.InvariantCulture, out DBT) == false)
@@ -116,10 +111,8 @@ namespace WheatherToDatabaseConverter //zmieniłem parsowanie na kropki, nie tes
                         }
                         DBT = float.Parse(nextParts[count], NumberStyles.Any, CultureInfo.InvariantCulture);
                         temporaryModel.DBT = float.Parse(nextParts[count], NumberStyles.Any, CultureInfo.InvariantCulture);
-                    //  Console.WriteLine("inside model={0}", temporaryModel.DBT);
 
                         count++;
-                    //   Console.WriteLine("DBT={0} - {1}", DBT, count);
 
 
                         while(Int32.TryParse(nextParts[count], NumberStyles.Any, CultureInfo.InvariantCulture, out RH) == false)
@@ -128,10 +121,8 @@ namespace WheatherToDatabaseConverter //zmieniłem parsowanie na kropki, nie tes
                         }
                         RH = Int32.Parse(nextParts[count], NumberStyles.Any, CultureInfo.InvariantCulture);
                         temporaryModel.RH = Int32.Parse(nextParts[count], NumberStyles.Any, CultureInfo.InvariantCulture);
-                    //  Console.WriteLine("inside model={0}", temporaryModel.RH);
 
                         count++;
-                    //   Console.WriteLine("RH={0} - {1}", RH, count);
 
 
                         for(int i = 0; i<40; i++)
@@ -143,7 +134,6 @@ namespace WheatherToDatabaseConverter //zmieniłem parsowanie na kropki, nie tes
 
                             restOfData[i] = float.Parse(nextParts[count], NumberStyles.Any, CultureInfo.InvariantCulture);
                             count++;
-                     //       Console.WriteLine("restOfData={0} - {1}", restOfData[i], count);
 
                         }
 
@@ -194,7 +184,6 @@ namespace WheatherToDatabaseConverter //zmieniłem parsowanie na kropki, nie tes
 
                         db.WheatherRecords.Add(temporaryModel);
             
-                        //  Console.WriteLine("NW-90 inside={0}", temporaryModel.NW_90);
                         Console.WriteLine();
                     }
 
